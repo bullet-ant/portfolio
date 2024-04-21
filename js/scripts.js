@@ -32,3 +32,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+const checkbox = document.querySelector('input[type="checkbox"]');
+
+checkbox.addEventListener("change", () => {
+	document.body.classList.toggle("dark-body");
+});
