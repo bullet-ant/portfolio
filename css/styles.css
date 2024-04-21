@@ -102,6 +102,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  /* cursor: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='6' height='6' viewBox='0 0 10 10'%3e%3ccircle cx='5' cy='5' r='5' fill='%23343A3F'/%3e%3c/svg%3e") 3 3, auto; */
 }
 
 hr {

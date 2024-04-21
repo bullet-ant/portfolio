@@ -32,3 +32,9 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+// window.addEventListener("load", (event) => {
+//     new cursoreffects.followingDotCursor({
+//         color: "#BD5D38",
+//     });
+// });
