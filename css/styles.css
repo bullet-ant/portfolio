@@ -10940,6 +10940,24 @@ p.lead {
   background-color: #bd5d38;
 }
 
+a.vanilla-anchor {
+  text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a.vanilla-anchor:hover a.vanilla-anchor:hover  {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ext-link:hover {
+  color: #bd5d38;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .dev-icons {
   font-size: 3rem;
 }
