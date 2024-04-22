@@ -91,6 +91,7 @@
   --theme-toggle-height: 1.4rem;
   --theme-toggle-circle-width: 0;
   --theme-toggle-circle-dimensions: calc(var(--theme-toggle-height) - 0.4rem);
+  --bs-profile-img-border: #fff;
 }
 
 *,
@@ -11254,9 +11255,10 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 11rem;
-    max-height: 11rem;
-    /* border: 0.5rem solid var(--bs-dark); */
+    max-width: 10rem;
+    max-height: 10rem;
+    /* border: 0.2rem solid var(--bs-profile-img-border); */
+    /* transition: border 0.5s; */
   }
   #sideNav .navbar-collapse {
     display: flex;
@@ -11348,6 +11350,7 @@ section.resume-section .resume-section-content {
   background-color: #181a1b;
   --bs-gray-dark: #c3beb6;
   --bs-gray: #9e9688;
+  --bs-profile-img-border: #3f3933;
 }
 
 .theme-toggle {
