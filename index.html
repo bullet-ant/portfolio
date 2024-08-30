@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Devicon CSS -->
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Tippy.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/shift-away.css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -144,31 +146,38 @@
                 <h2 class="mb-5">Skills</h2>
                 <div class="subheading mb-3">Programming Languages & Tools</div>
                 <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="fab fa-js-square" title="JavaScript"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-python" title="Python"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-html5" title="HTML5"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-css3-alt" title="CSS3"></i>
+                    <li class="list-inline-item" data-tippy-content="JavaScript"><i class="fab fa-js-square"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Python"><i class="fab fa-python"></i></li>
+                    <li class="list-inline-item" data-tippy-content="HTML5"><i class="fab fa-html5"></i></li>
+                    <li class="list-inline-item" data-tippy-content="CSS3"><i class="fab fa-css3-alt"></i>
                     </li>
-                    <li class="list-inline-item"><i class="fab fa-node" title="Node.js"></i></li>
-                    <li class="list-inline-item"><i class="devicon-express-original" title="Express.js"></i></li>
-                    <li class="list-inline-item"><i class="devicon-svelte-plain" style="font-size: 44px;"
-                            title="Svelte"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-react" title="React"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-sass" style="font-size: 42px;" title="Sass"></i></li>
-                    <li class="list-inline-item"><i class="devicon-nginx-plain"
-                            style="font-size: 74px; vertical-align: bottom" title="Nginx"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Node.js"><i class="fab fa-node"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Express.js"><i
+                            class="devicon-express-original"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Svelte"><i class="devicon-svelte-plain"
+                            style="font-size: 44px;"></i>
+                    </li>
+                    <li class="list-inline-item" data-tippy-content="React"><i class="fab fa-react"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Sass"><i class="fab fa-sass"
+                            style="font-size: 42px;"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Nginx"><i class="devicon-nginx-plain"
+                            style="font-size: 74px; vertical-align: bottom"></i></li>
                 </ul>
                 <ul class="list-inline dev-icons">
-                    <li class="list-inline-item"><i class="devicon-postgresql-plain" title="PostgreSQL"></i></li>
-                    <li class="list-inline-item"><i class="devicon-graphql-plain" title="GraphQL"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-square-git" title="Git"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-github" title="GitHub"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-aws" title="AWS"></i></li>
-                    <li class="list-inline-item"><i class="devicon-prometheus-original" title="Prometheus"></i></li>
-                    <li class="list-inline-item"><i class="devicon-apachekafka-original" title="Apache Kafka"></i></li>
-                    <li class="list-inline-item"><i class="fab fa-docker" title="Docker"></i></li>
-                    <li class="list-inline-item"><i class="devicon-kubernetes-plain" title="Kubernetes"></i></li>
-                    <li class="list-inline-item"><i class="devicon-helm-original" title="Helm"></i></li>
+                    <li class="list-inline-item" data-tippy-content="PostgreSQL"><i
+                            class="devicon-postgresql-plain"></i></li>
+                    <li class="list-inline-item" data-tippy-content="GraphQL"><i class="devicon-graphql-plain"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Git"><i class="fab fa-square-git"></i></li>
+                    <li class="list-inline-item" data-tippy-content="GitHub"><i class="fab fa-github"></i></li>
+                    <li class="list-inline-item" data-tippy-content="AWS"><i class="fab fa-aws"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Prometheus"><i
+                            class="devicon-prometheus-original"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Apache Kafka"><i
+                            class="devicon-apachekafka-original"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Docker"><i class="fab fa-docker"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Kubernetes"><i
+                            class="devicon-kubernetes-plain"></i></li>
+                    <li class="list-inline-item" data-tippy-content="Helm"><i class="devicon-helm-original"></i></li>
                 </ul>
 
                 <div class="subheading mb-3">Workflow</div>
@@ -269,6 +278,10 @@
                 </div>
         </section>
     </div>
+
+    <!-- Tippy.js -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->

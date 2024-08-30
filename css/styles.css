@@ -11401,3 +11401,33 @@ section.resume-section .resume-section-content {
       translateX(calc(var(--theme-toggle-width) - var(--theme-toggle-height)));
   }
 }
+
+/* Tippy.js */
+
+/* Font */
+.tippy-box {
+  font-size: 0.8rem;
+  padding: 0.1rem 0.2rem;
+}
+
+/* Theme */
+.tippy-box[data-theme~="charcoal"] {
+  background-color: var(--bs-gray-700);
+  color: #fff;
+}
+.tippy-box[data-theme~="charcoal"][data-placement^="top"]
+  > .tippy-arrow::before {
+  border-top-color: var(--bs-gray-700);
+}
+.tippy-box[data-theme~="charcoal"][data-placement^="bottom"]
+  > .tippy-arrow::before {
+  border-bottom-color: var(--bs-gray-700);
+}
+.tippy-box[data-theme~="charcoal"][data-placement^="left"]
+  > .tippy-arrow::before {
+  border-left-color: var(--bs-gray-700);
+}
+.tippy-box[data-theme~="charcoal"][data-placement^="right"]
+  > .tippy-arrow::before {
+  border-right-color: var(--bs-gray-700);
+}
